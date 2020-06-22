@@ -4,6 +4,9 @@ layout: page
 
 ---
 
+Welcome to my blog! Here is a little bit about me! 
+
+
 Education:
 
 - MSc Computer Systems and Security
