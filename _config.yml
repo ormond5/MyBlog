@@ -1,6 +1,6 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: DeShaun Ormond
+bio: Learning how to hack the world one day at a time!
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://sergiokopplin.github.io/indigo
+url: https://ormond5.github.io/MyBlog
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -38,10 +38,10 @@ facebook: myfacebook
 twitter: mytwitter
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: ormonddeshaunm
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: ormond5
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
@@ -53,9 +53,9 @@ medium: medium
 email: myemail@gmail.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  DeShaunOrmond:
+    name: DeShaun Ormond
+    bio:  Learning how to hack the world one day at a time!
     external-image: false
     picture: assets/images/profile.jpg
     twitter: johndoe
