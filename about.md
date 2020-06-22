@@ -1,6 +1,7 @@
 ---
 title: About
 layout: page
+subtitle: DeShaun Ormond
 ---
 
 Education:
