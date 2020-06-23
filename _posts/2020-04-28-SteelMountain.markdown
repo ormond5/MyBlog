@@ -2,11 +2,14 @@
 title: "TryHackMe-SteelMountain" 
 layout: post
 date: 04-28-2020
-subtitle: Walkthrough
-tags: [Windows, Metasploit, Privilege Escaltion]
 image: pictures/Steel_Mountain/steelmountain.jpg
+headerImage: false
+tag:
+- markdown
+- elements
 category: blog
-
+author: DeShaun Ormond
+description: Hello How are your
 ---
 
 
