@@ -1,7 +1,7 @@
 ---
 title: "TryHackMe-SteelMountain" 
 layout: post
-date: 04-28-2020
+
 image: pictures/Steel_Mountain/steelmountain.jpg
 headerImage: false
 tag:
