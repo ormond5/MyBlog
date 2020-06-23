@@ -4,7 +4,7 @@ layout: page
 
 ---
 
-Welcome to my blog! Here is a little bit about me! 
+## Welcome to my blog! Here is a little bit about me! 
 
 
 Education:
