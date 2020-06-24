@@ -120,7 +120,7 @@ It's sometimes handy for breaking things up.
 Markdown can also contain images. I'll need to add something here sometime.
 
 {% highlight raw %}
-![Markdowm Image][/image/url]
+![Markdowm Image][/imaee/url]
 {% endhighlight %}
 
 ![Markdowm Image][5]
