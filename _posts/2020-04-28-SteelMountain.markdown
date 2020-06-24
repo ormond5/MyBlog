@@ -40,7 +40,7 @@ Deploy the box and run a nmap scan!
 nmap -sC -sV <boxip> 
 ~~~
 
- ![nmap_scan](/assets/images/pictures/Steel_Mountain/nmap_scan.png)
+ ![nmap_scan][/assets/images/pictures/Steel_Mountain/nmap_scan.png]
 
 We have two http services running, let's take a look at those websites!  Access the web service running on port 80
 ~~~
