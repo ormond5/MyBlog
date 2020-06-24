@@ -5,11 +5,12 @@ date: 2020-04-28 22:44
 image: /assets/images/pictures/Steel_Mountain/steelmountain.jpg
 headerImage: true
 tag:
-- markdown
-- elements
+- Windows
+- Metasploit
+- Privilege Escalation
 category: blog
 author: DeShaun Ormond
-description: Hello How are your
+
 ---
 
 
