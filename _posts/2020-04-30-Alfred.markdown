@@ -43,7 +43,7 @@ nmap -sC -sV <boxip> -Pn
 10.10.51.179
 
 
- ![nmap_scan](/pictures/Alfred/nmap.png)
+ ![nmap_scan](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/nmap.png)
 
 Our nmap scan shows 3 ports running on this box. Therefore we have our first answer. 
 
