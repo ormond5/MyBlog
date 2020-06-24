@@ -2,9 +2,11 @@
 title: "TryHackMe-Alfred" 
 layout: post
 date: 2020-04-30 21:12
-subtitle: Walkthrough
-tags: [Windows, Meterpreter, Privilege Escaltion]
-image: pictures/Alfred/Alfred.png
+tag:
+- Windows
+- Meterpreter
+- Privilege Escalation
+image: /assets/images/pictures/Alfred/Alfred.png
 headerImage: true
 category: blog
 author: DeShaun Ormond
