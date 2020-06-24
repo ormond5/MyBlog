@@ -1,7 +1,7 @@
 ---
 title: "TryHackMe-SteelMountain" 
 layout: post
-date: 2020-05-24 22:44
+date: 2020-04-28 22:44
 image: pictures/Steel_Mountain/steelmountain.jpg
 headerImage: false
 tag:
@@ -39,7 +39,7 @@ Deploy the box and run a nmap scan!
 nmap -sC -sV <boxip> 
 ~~~
 
- ![nmap_scan](/pictures/Steel_Mountain/nmap_scan.png)
+ ![nmap_scan](pictures/Steel_Mountain/nmap_scan.png)
 
 We have two http services running, let's take a look at those websites!  Access the web service running on port 80
 ~~~
