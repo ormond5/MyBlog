@@ -2,7 +2,7 @@
 title: "TryHackMe-SteelMountain" 
 layout: post
 date: 2020-04-28 22:44
-image: https://ormond5.github.io/MyBlog/assets/images/assets/images/pictures/Steel_Mountain/steelmountain.jpg
+image: https://ormond5.github.io/MyBlog/assets/images/pictures/Steel_Mountain/steelmountain.jpg
 headerImage: true
 tag:
 - Windows
@@ -136,7 +136,7 @@ This will output a copy of the file to your current directory. Switch back to th
 
 The enumeration file should start to run and you should get back some information on what service is running on this machine. Locate the services that have 'CanRestart' option set equal to 'True'. This will be your answer for the next flag! 
 
-![flag3.2](/assets/images/pictures/Steel_Mountain/psscan.png)
+![flag3.2](https://ormond5.github.io/MyBlog/assets/images/pictures/Steel_Mountain/psscan.png)
 
 
 {: .box-success}

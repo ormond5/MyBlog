@@ -1,14 +1,13 @@
 ---
-layout: post
 title: "TryHackMe-Game Zone"
+layout: post
 date: 2020-05-07 11:33
-tags:
+tag:
 - SQL
 - John The Ripper
 - Metasploit
 image: https://ormond5.github.io/MyBlog/assets/images/pictures/GameZone/GameZone.jpeg
 headerImage: true
-comments: false
 category: blog
 author: DeShaun Ormond
 ---
