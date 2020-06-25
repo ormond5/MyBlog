@@ -148,7 +148,7 @@ Once you have saved and applied the new changes, navigate back to the projects p
 
 You may have to cancel the previous exploit, which will kick you out. Don't worry! Run the command and then re-run task 1 to get back in. 
 
-![build](/pictures/Alfred/Build.png)
+![build](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/Build.png)
 
 
 Once you get back in, you should see alfred.exe in your current directory. and run the command: 
