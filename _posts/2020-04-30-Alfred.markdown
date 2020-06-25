@@ -43,7 +43,7 @@ nmap -sC -sV <boxip> -Pn
 10.10.51.179
 
 
- ![nmap_scan](/pictures/Alfred/nmap.png)
+ ![nmap_scan](https://ormond5.github.io/MyBlog/pictures/Alfred/nmap.png)
 
 Our nmap scan shows 3 ports running on this box. Therefore we have our first answer. 
 
@@ -54,7 +54,7 @@ Our nmap scan shows 3 ports running on this box. Therefore we have our first ans
 
 From the nmap scan we see that we have two http services running. Navigate to the webserver on port 8080. You will see a login page. what are the chances that the manager didnt change the default credentials... let's try admin for both username and password
 
-![admin](/pictures/Alfred/adminlogin.png)
+![admin](https://ormond5.github.io/MyBlog/pictures/Alfred/adminlogin.png)
 
 We are in and we found our next flag! 
 
