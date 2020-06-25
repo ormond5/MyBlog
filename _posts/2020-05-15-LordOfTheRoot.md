@@ -12,4 +12,7 @@ category: blog
 author: DeShaun Ormond
 ---
 
-[gif](https://media.giphy.com/media/L0q1c7hkE7Cu1obMnN/giphy.gif)
+<p align="center"> 
+  <img src="https://media.giphy.com/media/L0q1c7hkE7Cu1obMnN/giphy.gif">
+</p>
+
